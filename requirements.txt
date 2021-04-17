@@ -1,0 +1,17 @@
+
+
+Pages:
+  Home link to all pages
+  contact - page to put ways to contact me
+
+  all Posts - with topic link
+  Posts by topic - header with topic options
+  single post - a page dedicated for the post
+
+Frameworks:
+  reactjs
+
+Tecnologies:
+  styled-components
+  react-router-dom
+  
