@@ -7,6 +7,7 @@ Pages:
   all Posts - with topic link
   Posts by topic - header with topic options
   single post - a page dedicated for the post
+  search Post
 
 Frameworks:
   reactjs
@@ -14,4 +15,5 @@ Frameworks:
 Tecnologies:
   styled-components
   react-router-dom
+  material-ui
   
