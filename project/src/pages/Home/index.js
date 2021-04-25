@@ -42,7 +42,7 @@ function Home() {
     }
   }
 
-  window.onload = () => {
+	window.addEventListener('resize', () => {
     if (window.innerWidth <= 605) {
       menu.close();
     }
@@ -51,16 +51,16 @@ function Home() {
         if (!menuIsOpen) {
           menu.open();
         }
-      } else if (window.innerWidth <= 605) {
+			}
+			if (window.innerWidth <= 605) {
         if (menuIsOpen) {
           menu.close();
         }
       }
     })
-  }
+	});
   
   document.title = "Home - blog";
-
 
   return (
     <Container>
@@ -71,10 +71,10 @@ function Home() {
       </Menu>
       <SideBar className="sidebar" menu={menuIsOpen}>
         <TitleSideBar className="title_sidebar">Go to</TitleSideBar>
-        <Link href="/">All posts</Link>
-        <Link href="/">Posts By Topic</Link>
-        <Link href="/">Search Post</Link>
-        <Link href="/">Contact</Link>
+        <Link to="/all-posts">All posts</Link>
+        <Link to="/">Posts By Topic</Link>
+        <Link to="/">Search Post</Link>
+        <Link to="/">Contact</Link>
       </SideBar>
       <Center calssName="center">
         <Content className="container_center">

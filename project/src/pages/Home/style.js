@@ -1,3 +1,4 @@
+import { Link as LinkRouter} from 'react-router-dom';
 import styled from 'styled-components';
 
 const black = '#1B2431';
@@ -65,7 +66,7 @@ export const TitleSideBar = styled.h1`
   font-size: 3rem;
 `;
 
-export const Link = styled.a`
+export const Link = styled(LinkRouter)`
   position: relative;
   color: white;
   width: 90%;

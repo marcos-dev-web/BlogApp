@@ -1,3 +1,8 @@
+.container_center {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
 
 .sidebar {
   transition: all 200ms linear;
@@ -26,7 +31,7 @@
 .content_paragraph {
   margin-top: 2rem;
   width: 100%;
-  text-align: left;
+  text-align: center;
 }
 
 .list {
