@@ -1,4 +1,0 @@
---soft-blue: #069AF3;
---dark-blue: #3D7AFD;
---black: #1B2431;
---purple: #5729CE;
