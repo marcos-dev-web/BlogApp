@@ -1,27 +1,24 @@
-import React, { Suspense, lazy } from 'react';
+import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Load from './components/Load';
 
-const Home = lazy(() => import('./pages/Home'));
-const AllPosts = lazy(() => import('./pages/AllPosts'));
+import Header from './components/Header';
 
+import AllPosts from './pages/AllPosts';
+import PostsByTopic from './pages/PostsByTopic';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Switch>
-        <Route path="/" exact>
-          <Suspense fallback={<Load />}>
-            <Home />
-          </Suspense>
-        </Route>
-        <Route path="/all-posts" exact>
-          <Suspense fallback={<Load />}>
-            <AllPosts />
-          </Suspense>
-        </Route>
-      </Switch>
-    </BrowserRouter>
+		<BrowserRouter>
+			<Header />
+			<Switch>
+				<Route exact path="/all-posts">
+					<AllPosts />
+				</Route>
+				<Route exact path="/posts-by-topic">
+					<PostsByTopic />
+				</Route>
+			</Switch>
+		</BrowserRouter>
   );
 }
 

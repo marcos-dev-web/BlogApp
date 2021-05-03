@@ -1,0 +1,40 @@
+.container_header_unique {
+	width: 100%;
+	padding: 0.5rem 1rem;
+
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+
+	margin: 0 auto;
+	max-width: var(--max-width);
+
+	& h1 {
+		font-size: 2.5rem;
+		text-align: left;
+		line-height: 2.5rem;
+	}
+
+	button {
+		font-size: 1rem;
+		background: dodgerblue;
+		border: 1px solid white;
+		border-radius: 5px;
+		padding: 2px 5px;
+		text-align: center;
+		cursor: pointer;
+		color: white;
+
+		transition: all 100ms linear;
+
+		&:hover {
+			background: #6aadee;
+		}
+
+		&:active {
+			background: black;
+		}
+	}
+
+	padding-bottom: 2rem;
+}
