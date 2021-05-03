@@ -1,0 +1,40 @@
+.container_post {
+	width: 100%;
+	margin: 0 auto;
+	max-width: var(--max-width);
+	padding-bottom: 1rem;
+	margin-bottom: 2rem;
+	border-bottom: 1px solid #ddd;
+}
+
+.content_post {
+	width: 100%;
+	padding: 1rem 0.5rem;
+}
+
+.text_post {
+	font-size: 1.1rem;
+	color: var(--soft-black);
+	text-align: left;
+	margin-top: 1rem;
+	text-indent: 1rem;
+}
+
+strong.bold {
+	color: var(--soft-black);
+	font-size: 1.1rem;
+	padding: 0 0.2rem;
+}
+
+.link {
+	color: dodgerblue;
+	text-decoration: none;
+	border-bottom: 1px solid black;
+	transition: all 100ms linear;
+
+	&:hover {
+		color: black;
+		background: #bbeffd;
+	}
+}
+
